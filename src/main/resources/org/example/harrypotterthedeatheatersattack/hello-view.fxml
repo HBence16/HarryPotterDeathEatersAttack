@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.harrypotterthedeatheatersattack.Controller">
+   <children>
+      <Pane fx:id="gamePane" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <ImageView fx:id="harry" fitHeight="96.0" fitWidth="88.0" layoutX="916.0" layoutY="469.0" onKeyPressed="#KeyPressed" onKeyReleased="#KeyReleased" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/harry.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="endLabel" alignment="CENTER" prefHeight="1080.0" prefWidth="1920.0" text="You lost!" textAlignment="CENTER" textFill="#ff2323" visible="false" wrapText="true">
+               <font>
+                  <Font name="MS UI Gothic" size="200.0" />
+               </font>
+            </Label>
+            <Label fx:id="timer" alignment="TOP_CENTER" layoutX="828.0" layoutY="78.0" prefHeight="141.0" prefWidth="265.0" text="00:00" textAlignment="CENTER">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="healthbar" layoutX="716.0" layoutY="928.0" prefHeight="44.0" prefWidth="489.0" progress="1.0" style="-fx-background-color: green;" />
+            <ProgressBar fx:id="experiencebar" layoutX="1.0" layoutY="1002.0" prefHeight="44.0" prefWidth="1921.0" progress="1.0" style="-fx-background-color: green;" />
+            <ImageView fx:id="bombardaIcon" fitHeight="81.0" fitWidth="77.0" layoutX="420.0" layoutY="907.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/User/Downloads/HarryPotterTheDeathEatersAttack/HarryPotterTheDeathEatersAttack/src/main/resources/images/spells/bombardaIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="depulsoIcon" fitHeight="81.0" fitWidth="77.0" layoutX="333.0" layoutY="907.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/User/Downloads/HarryPotterTheDeathEatersAttack/HarryPotterTheDeathEatersAttack/src/main/resources/images/spells/depulsoIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="leviosoIcon" fitHeight="81.0" fitWidth="77.0" layoutX="242.0" layoutY="907.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/User/Downloads/HarryPotterTheDeathEatersAttack/HarryPotterTheDeathEatersAttack/src/main/resources/images/spells/leviosoIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="episkeyIcon" fitHeight="81.0" fitWidth="77.0" layoutX="146.0" layoutY="912.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/User/Downloads/HarryPotterTheDeathEatersAttack/HarryPotterTheDeathEatersAttack/src/main/resources/images/spells/episkeyIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="protegoIcon" fitHeight="81.0" fitWidth="77.0" layoutX="58.0" layoutY="907.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/User/Downloads/HarryPotterTheDeathEatersAttack/HarryPotterTheDeathEatersAttack/src/main/resources/images/spells/protegoIcon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="protegoLabel" layoutX="91.0" layoutY="981.0" text="Q" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="episkeyLabel" layoutX="181.0" layoutY="981.0" text="E" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="leviosoLabel" layoutX="278.0" layoutY="981.0" text="J" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="depulsoLabel" layoutX="367.0" layoutY="981.0" text="K" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="bombardaLabel" layoutX="455.0" layoutY="981.0" text="L" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Circle fill="DODGERBLUE" layoutX="960.0" layoutY="1015.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="14.0" layoutY="1015.0" textFill="WHITE" fx:id="xpLabel" />
+            <Label fx:id="hpLabel" layoutX="940.0" layoutY="937.0" text="100/100" textAlignment="CENTER" />
+            <Label fx:id="levelLabel" layoutX="936.0" layoutY="986.0" prefHeight="59.0" prefWidth="51.0" text="01" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
